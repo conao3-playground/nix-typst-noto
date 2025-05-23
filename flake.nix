@@ -35,6 +35,7 @@
           fonts = with pkgs; [
             noto-fonts-cjk-sans
             noto-fonts-cjk-serif
+            texlivePackages.haranoaji
           ];
           font-path = builtins.concatStringsSep ":" fonts;
           typst-compile = pkgs.writeShellScriptBin "compile" ''
